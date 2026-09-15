@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_widget_cyber_glass"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- 3D Core Hologram Preview Image -->
+    <ImageView
+        android:id="@+id/widget_3d_core_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_vortex_3d_core_1789293182205"
+        android:contentDescription="3D Hologram Core" />
+
+    <!-- Center Info Column -->
+    <LinearLayout
+        android:id="@+id/widget_text_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIRA • MJP"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_core_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D CORE: CRIMSON VORTEX"
+            android:textColor="#FF2A55"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● 3D Neural Link Online"
+            android:textColor="#38BDF8"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- Quick Voice Trigger Button -->
+    <ImageView
+        android:id="@+id/widget_mic_action_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_widget_mic_button"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:contentDescription="Voice Action" />
+
+</LinearLayout>

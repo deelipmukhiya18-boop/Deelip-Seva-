@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <!-- Glowing Cybernetic Ring Background -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/bg_widget_mic_button"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/floating_orb_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_vortex_3d_core_1789293182205"
+                android:contentDescription="Floating 3D Hologram Core" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/floating_orb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D CORE"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:shadowColor="#FF2A55"
+            android:shadowRadius="6"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Close Cross Button in Top Right Corner -->
+    <ImageView
+        android:id="@+id/floating_orb_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_widget_mic_button"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Close Floating Orb" />
+
+</FrameLayout>

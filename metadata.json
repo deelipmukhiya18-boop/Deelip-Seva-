@@ -1,0 +1,8 @@
+{
+  "name": "MJ",
+  "description": "MJ Cyber AI Assistant with real-time voice conversations, Gemini AI, GPT-4, and ElevenLabs audio capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
